@@ -1,0 +1,6 @@
+{
+    "jira_server": "https://fake.atlassian.net/",
+    "api_email": "fake@fake.com",
+    "api_token": "fakeToken",
+    "jql": "assignee = currentUser() and sprint in openSprints()"
+}
