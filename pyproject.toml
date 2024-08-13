@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "jira2taskade"
+version = "0.1.0"
+description = ""
+authors = ["Edmundo Sanchez <zomundo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jira = "^3.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+black = "^24.8.0"
+flake8 = "^7.1.1"
+flake8-pyproject = "^1.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 120
+ignore = "E203, E266, E501, W503"
+max-complexity = 10
+select = "B,C,E,F,W,T4,B9"
+
+[tool.black]
+line-length = 120
+target-version = ['py312']
+skip-string-normalization = true
