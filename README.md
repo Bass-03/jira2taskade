@@ -1,6 +1,6 @@
-[![Python Basics](https://github.com/Bass-03/jira2taskate/actions/workflows/python-app.yml/badge.svg)](https://github.com/Bass-03/jira2taskate/actions/workflows/python-app.yml)
-
 # jira2taskade
+
+[![Python Basics](https://github.com/Bass-03/jira2taskate/actions/workflows/python-app.yml/badge.svg)](https://github.com/Bass-03/jira2taskate/actions/workflows/python-app.yml)
 
 `jira2taskade` is a Python project that integrates with JIRA to fetch issues based on JQL queries.
 
@@ -18,7 +18,7 @@
 
 To install the project dependencies, use [Poetry](https://python-poetry.org/):
 
-```sh
+``` bash
 poetry install
 ```
 
