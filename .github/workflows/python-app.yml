@@ -9,9 +9,7 @@ on:
 jobs:
   test:
 
-    runs-on: self-hosted
-    container:
-      image: debian:latest
+    runs-on: debian:latest
 
     steps:
     - name: Checkout repository
