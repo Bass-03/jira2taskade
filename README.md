@@ -1,3 +1,5 @@
+[![Python Basics](https://github.com/Bass-03/jira2taskate/actions/workflows/python-app.yml/badge.svg)](https://github.com/Bass-03/jira2taskate/actions/workflows/python-app.yml)
+
 # jira2taskade
 
 `jira2taskade` is a Python project that integrates with JIRA to fetch issues based on JQL queries.
