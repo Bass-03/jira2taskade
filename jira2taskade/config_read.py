@@ -4,7 +4,6 @@ from dataclasses import dataclass
 
 @dataclass
 class Config:
-    jira_server: str
     jira_email: str
     jira_token: str
     jql: str

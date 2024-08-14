@@ -1,7 +1,6 @@
 {
-    "jira_server": "https://fake.atlassian.net/",
     "jira_email": "fake@fake.com",
     "jira_token": "fakeToken",
-    "jql": "assignee = currentUser() and sprint in openSprints()",
+    "jql": "assignee = currentUser() and sprint in openSprints() AND statusCategory != Done",
     "taskade_token": "fakeToken"
 }

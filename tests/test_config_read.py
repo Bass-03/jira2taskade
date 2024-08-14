@@ -12,8 +12,8 @@ def test_read_config():
         "jira_server": "https://fake.atlassian.net/",
         "jira_email": "fake@fake.com",
         "jira_token": "fakeToken",
-        "jql": "assignee = currentUser() and sprint in openSprints()"
+        "jql": "assignee = currentUser() and sprint in openSprints() AND statusCategory != Done"
     }
-    print(config.jira_server)
-    assert config.jira_server == config_data["jira_server"]
+    print(config.jira_token)
+    assert config.jira_token == config_data["jira_token"]
     assert config.jql == config_data["jql"]
