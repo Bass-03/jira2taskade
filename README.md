@@ -12,6 +12,7 @@
   - [Configuration](#configuration)
   - [Usage](#usage)
   - [Testing](#testing)
+  - [Install the thing](#install-the-thing)
   - [License](#license)
 
 ## Installation
@@ -28,10 +29,10 @@ Create a configuration file config.json in the root directory of the project wit
 
 ``` json
 {
-    "jira_server": "https://your-jira-server.atlassian.net/",
-    "api_email": "your-email@example.com",
-    "api_token": "your-api-token",
-    "jql": "your-jql-query"
+    "jira_email": "your-email@example.com",
+    "jira_token": "your-api-token",
+    "jql": "your-jql-query",
+    "taskade_token": "taskade-token"
 }
 ```
 
@@ -58,6 +59,18 @@ To run the tests, use pytest:
 
 ``` bash
 poetry run pytest
+```
+
+## Install the thing
+
+Create a config file at `~/.config/jira2taskade/config.json` 
+
+Install the package using pipx:
+
+``` bash
+poetry build
+pipx install dist/jira2taskade-0.1.0-py3-none-any.whl
+
 ```
 
 ## License
