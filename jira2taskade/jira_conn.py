@@ -10,4 +10,7 @@ class JiraConn:
 
     def get_issues(self, jql):
         issues = self.jira.search_issues(jql)
-        return issues
+        result = []
+        for issue in issues:
+            result.append({"key": issue.key, "summary": issue.fields.summary})
+        return result
