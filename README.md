@@ -19,7 +19,7 @@
 
 To install the project dependencies, use [Poetry](https://python-poetry.org/):
 
-```sh
+``` bash
 poetry install
 ```
 
@@ -29,10 +29,10 @@ Create a configuration file config.json in the root directory of the project wit
 
 ``` json
 {
-    "jira_server": "https://your-jira-server.atlassian.net/",
-    "api_email": "your-email@example.com",
-    "api_token": "your-api-token",
-    "jql": "your-jql-query"
+    "jira_email": "your-email@example.com",
+    "jira_token": "your-api-token",
+    "jql": "your-jql-query",
+    "taskade_token": "taskade-token"
 }
 ```
 
