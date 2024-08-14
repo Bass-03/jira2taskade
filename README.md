@@ -1,6 +1,6 @@
-[![Python Basics](https://github.com/Bass-03/jira2taskate/actions/workflows/python-app.yml/badge.svg)](https://github.com/Bass-03/jira2taskate/actions/workflows/python-app.yml)
-
 # jira2taskade
+
+[![Python Basics](https://github.com/Bass-03/jira2taskate/actions/workflows/python-app.yml/badge.svg)](https://github.com/Bass-03/jira2taskate/actions/workflows/python-app.yml)
 
 `jira2taskade` is a Python project that integrates with JIRA to fetch issues based on JQL queries.
 
@@ -12,6 +12,7 @@
   - [Configuration](#configuration)
   - [Usage](#usage)
   - [Testing](#testing)
+  - [Install the thing](#install-the-thing)
   - [License](#license)
 
 ## Installation
@@ -58,6 +59,18 @@ To run the tests, use pytest:
 
 ``` bash
 poetry run pytest
+```
+
+## Install the thing
+
+Create a config file at `~/.config/jira2taskade/config.json`
+
+Install the package using pipx:
+
+``` bash
+poetry build
+pipx install dist/jira2taskade-0.1.0-py3-none-any.whl
+
 ```
 
 ## License
